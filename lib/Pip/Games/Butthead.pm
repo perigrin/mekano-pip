@@ -60,6 +60,7 @@ has butthead => (
 sub S_bot_addressed {
     my ( $self, $irc, $nickstring, $channels, $message ) = @_;
     $message = $$message;
+    warn 'GOT HERE!';
     my @channels = @{$$channels};
     if ( my $word = $self->scan($message) ) {
         my $joke = $self->get_joke;
