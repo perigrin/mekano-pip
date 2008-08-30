@@ -54,6 +54,7 @@ has butthead => (
     isa     => 'Acme::Butthead',
     is      => 'ro',
     default => sub { Acme::Butthead->new() },
+    handles => [qw(scan)],
 );
 
 sub S_bot_addressed {
