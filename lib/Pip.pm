@@ -11,9 +11,10 @@ use MooseX::AttributeHelpers;
 nickname 'test-pip';
 channels '#orlando';
 plugins(
-    'Games-Barfly'  => 'Pip::Games::Barfly',
-    'Games-Barjoke' => 'Pip::Games::BarJoke',
-    'Time'          => 'Pip::Time',
+    'Games-Barfly'   => 'Pip::Games::Barfly',
+    'Games-Barjoke'  => 'Pip::Games::BarJoke',
+    'Games-Butthead' => 'Pip::Games::Butthead',
+    'Time'           => 'Pip::Time',
 );
 
 has botid => (
@@ -35,7 +36,6 @@ has _custids => (
 
 has _aiml => (
     isa        => 'Net::AIML',
-    is         => 'ro',
     accessor   => 'aiml',
     lazy_build => 1,
     handles    => { tell_bot => 'tell' }

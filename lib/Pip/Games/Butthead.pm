@@ -41,7 +41,7 @@
     1;
 }
 
-package Pip::Games::BarJoke;
+package Pip::Games::Butthead;
 use Moose;
 extends qw(Adam::Plugin);
 
